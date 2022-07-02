@@ -14,9 +14,10 @@
 1. HTML5
 2. CSS3
 3. JS/jQuery
-5. BEM naming
-7. Git 
-8. Desktop first
+4. BEM naming
+5. Git 
+6. Desktop first
+7. PixelPerfect
 
 ## В проекте будет дополнительно реализовано:
 1. Responsive design
