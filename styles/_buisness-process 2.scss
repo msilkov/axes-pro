@@ -1,0 +1,79 @@
+.buisness-process {
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 44px;
+	margin: 0 auto;
+	background-color: $light-gray;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	min-height: 413px;
+	@media screen and (max-width: $iphone) {
+		padding-top: 10px;
+		padding-bottom: 25px;
+	}
+}
+.buisness-process__wrapper {
+	width: 100%;
+	border-bottom: 0.5px solid $orange;
+	padding-bottom: 53px;
+	margin-bottom: 55px;
+	@media screen and (max-width: $iphone) {
+		border-bottom: 0;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+}
+.section-heading_place_buisness-process {
+	margin-bottom: 37px;
+}
+.buisness-process__inner {
+	max-width: 1570px;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@media screen and (max-width: $macbookpro) {
+		max-width: 1170px;
+	}
+	@media screen and (max-width: $iphone) {
+		flex-direction: column;
+		padding-left: 55px;
+		padding-right: 55px;
+	}
+}
+
+.buisness-process__desc {
+	position: relative;
+	max-width: 271px;
+	padding: 5px;
+	&::after {
+		content: url(../images/dot.svg);
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left: 50%;
+		bottom: -63px;
+		transform: translateX(-50%);
+		@media screen and (max-width: $iphone) {
+			bottom: 0;
+			top: -15px;
+		}
+	}
+	@media screen and (max-width: $macbookpro) {
+		max-width: 235px;
+	}
+	@media screen and (max-width: $iphone) {
+		margin-bottom: 20px;
+	}
+}
+
+.buisness-process__text {
+	text-align: center;
+	margin: 0;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.1;
+}

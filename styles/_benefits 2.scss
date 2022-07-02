@@ -1,0 +1,196 @@
+.benefits {
+	padding-top: 50px;
+	padding-bottom: 146px;
+	max-width: 1920px;
+	margin: 0 auto;
+	@media screen and (max-width: $iphone) {
+		padding-top: 30px;
+		padding-bottom: 60px;
+	}
+	&_place_career {
+		padding-bottom: 95px;
+		@media screen and (max-width: $iphone) {
+			padding-top: 45px;
+			padding-bottom: 0;
+		}
+	}
+	&_place_training {
+		padding-top: 80px;
+		padding-bottom: 100px;
+		@media screen and (max-width: $iphone) {
+			padding-top: 45px;
+			padding-bottom: 0;
+		}
+	}
+	&_place_performance {
+		padding-top: 60px;
+		padding-bottom: 200px;
+		@media screen and (max-width: $iphone) {
+			padding-top: 35px;
+			padding-bottom: 0;
+		}
+	}
+}
+
+.benefits__wrapper {
+	max-width: 1920px;
+	padding: 0 15px;
+	margin: 0 auto;
+	@media screen and (max-width: $iphone) {
+		max-width: 375px;
+	}
+}
+
+.benefits__inner {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-heading_place_benefits {
+	line-height: 41px;
+	text-transform: uppercase;
+	margin-bottom: 60px;
+	@media screen and (max-width: $iphone) {
+		line-height: 26px;
+		margin-bottom: 45px;
+	}
+}
+
+.arrows {
+	display: block;
+	width: 1250px;
+	height: 50px;
+	background-image: url(../images/arrows-benefits-4.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 30px;
+	@media screen and (max-width: $macbookpro) {
+		width: 930px;
+	}
+	@media screen and (max-width: $iphone) {
+		display: none;
+	}
+	&_three {
+		background-image: url(../images/arrows-benefits-3.png);
+	}
+	&_five {
+		background-image: url(../images/arrows-benefits-5.png);
+		@media screen and (max-width: $macbookpro) {
+			width: 990px;
+		}
+	}
+}
+
+.benefits__item-group {
+	min-width: 1500px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@media screen and (max-width: $iphone) {
+		flex-direction: column;
+		min-width: 100%;
+	}
+	@media screen and (max-width: $macbookpro) {
+		min-width: 1170px;
+	}
+	.benefits__item-text {
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 21px;
+		text-align: center;
+		color: #ffffff;
+		margin: 0;
+		z-index: 3;
+		max-width: 220px;
+		&_hover {
+			transition: all 0.7s;
+			max-width: 80%;
+			box-shadow: 0px 10px 20px rgba(185, 185, 185, 0.36);
+			border-radius: 10px;
+			border-top: none;
+			padding: 25px 10px 10px;
+			position: absolute;
+			bottom: 0;
+			opacity: 0;
+			font-weight: 400;
+			color: $text-secondary;
+			z-index: -1;
+			@media screen and (max-width: $iphone) {
+				display: none;
+			}
+		}
+		@media screen and (max-width: $iphone) {
+			max-width: 220px;
+		}	
+	}
+
+	&_count_three {
+		min-width: 1015px;
+		@media screen and (max-width: $iphone) {
+			flex-direction: column;
+			min-width: 100%;
+		}
+	}
+	&_count_four{
+		@media screen and (max-width: $iphone) {
+			flex-direction: column;
+			min-width: 100%;
+		}
+		.benefits__item-text{
+			@media screen and (max-width: $macbookpro) {
+				max-width: 200px;
+			}
+		}
+	}
+	&_count_five{
+		@media screen and (max-width: $iphone) {
+			flex-direction: column;
+			min-width: 100%;
+		}
+		.benefits__item-text{	
+			@media screen and (max-width: $macbookpro) {
+				max-width: 150px;
+			}
+		}
+	}
+}
+.benefits__item {
+	cursor: pointer;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 193px;
+	padding: 32px;
+	background-color: $orange;
+	border-radius: 32px;
+	z-index: 3;
+	&:hover .benefits__item-text_hover {
+		transform: translateY(100%);
+		opacity: 1;
+	}
+	@media screen and (max-width: $iphone) {
+		margin-bottom: 45px;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+
+
+.benefits__item-img {
+	position: absolute;
+	object-fit: fill;
+	width: 100%;
+	height: auto;
+	top: -6%;
+	left: 0;
+	z-index: 1;
+}

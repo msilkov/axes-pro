@@ -1,0 +1,137 @@
+.roadmap-extrablock {
+	max-width: 1420px;
+	padding: 25px;
+	margin: 145px auto;
+	background-color: #fff;
+	box-shadow: 0px 10px 11px rgba(157, 157, 157, 0.25);
+	border-radius: 50px;
+	@media screen and (max-width: $iphone) {
+		border: 1px solid #e9e9e9;
+		box-shadow: 0px 3px 11px rgba(157, 157, 157, 0.25);
+		margin-top: 60px;
+		margin-bottom: 0;
+	}
+	&_place_hr {
+		max-width: 1120px;
+		margin: 75px auto;
+	}
+	&_place_content-mngt {
+		max-width: 1640px;
+		margin: 70px auto 100px;
+	}
+}
+
+.roadmap-extrablock__title {
+	display: block;
+	max-width: 900px;
+	margin: 0 auto;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.3;
+	text-align: center;
+	margin-bottom: 15px;
+	&_place_content-mngt {
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 41px;
+		margin-bottom: 40px;
+	}
+	@media screen and (max-width: $iphone) {
+		margin-bottom: 30px;
+		font-size: 18px;
+	}
+}
+
+.roadmap-extrablock__inner {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	&_centered {
+		justify-content: center;
+	}
+	@media screen and (max-width: $iphone) {
+		flex-direction: column;
+	}
+	&_place_content-mngt {
+		@media screen and (max-width: $iphone) {
+			padding-bottom: 25px;
+		}
+	}
+}
+
+.roadmap-extrablock__item {
+	max-width: 365px;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	@media screen and (max-width: $iphone) {
+		padding: 0;
+		margin-bottom: 35px;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+	&.hidden-item {
+		@media screen and (max-width: $iphone) {
+			display: none;
+		}
+	}
+	&_place_hr {
+		max-width: 280px;
+	}
+	&_place_content-mngt {
+		min-width: 320px;
+		@media screen and (max-width: $macbookpro) {
+			min-width: 200px;
+		}
+	}
+}
+
+.roadmap-extrablock__img-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 15px;
+	&_place_content-mngt {
+		margin-bottom: 60px;
+		@media screen and (max-width: $macbookpro) {
+			margin-bottom: 40px;
+
+		}
+		@media screen and (max-width: $iphone) {
+			margin-bottom: 25px;
+		}
+	}
+}
+.roadmap-extrablock__img {
+	max-width: 102px;
+}
+
+.roadmap-extrablock__decs {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+	margin-bottom: 25px;
+}
+
+.roadmap-extrablock__text {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	color: $text-secondary;
+	&_place_content-mngt {
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 25px;
+		text-align: center;
+		text-transform: uppercase;
+		color: $text-main;
+		@media screen and (max-width: $macbookpro) {
+			font-size: 20px;
+			line-height: 20px;
+		}
+	}
+}
