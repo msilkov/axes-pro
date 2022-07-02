@@ -1,0 +1,82 @@
+.pagination-top {
+	max-width: 1760px;
+	margin: 65px auto 0;
+	padding-top: 35px;
+	padding-bottom: 60px;
+	@media screen and (max-width: $macbookpro) {
+		max-width: 1170px;
+	}
+	@media screen and (max-width: $iphone) {
+		padding-top: 15px;
+		padding-bottom: 0;
+	}
+}
+.pagination-top__wrapper {
+	display: flex;
+	@media screen and (max-width: $iphone) {
+		overflow-x: scroll;
+	}
+}
+
+.pagination-top__page-link {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 220px;
+	min-height: 235px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	transition: all 0.3s;
+	&:hover {
+		background: rgba(255, 255, 255, 0.03);
+		box-shadow: 0px 20px 18px rgba(30, 23, 168, 0.25);
+	}
+	&.active{
+		background: rgba(255, 255, 255, 0.03);
+		box-shadow: 0px 20px 18px rgba(30, 23, 168, 0.25);
+	}
+	@media screen and (max-width: $macbookpro) {
+		max-width: 150px;
+		min-height: 130px;
+		
+	}
+	@media screen and (max-width: $iphone) {
+		max-width: 100px;
+		min-height: 130px;
+	}
+}
+
+.pagination-top__page-icon {
+	width: 96px;
+	height: 96px;
+	object-fit: cover;
+	@media screen and (max-width: $macbookpro) {
+		width: 65px;
+		height: 65px;
+	}
+	@media screen and (max-width: $iphone) {
+		width: 48px;
+		height: 48px;
+	}
+}
+
+.pagination-top__page-desc {
+	margin: 17px 0 10px 0;
+	text-align: center;
+	color: $text-secondary;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.2;
+	@media screen and (max-width: $macbookpro) {
+		font-size: 15px;
+
+	}
+	@media screen and (max-width: $iphone) {
+		font-weight: 400;
+		font-size: 11px;
+		line-height: 13px;
+	}
+}

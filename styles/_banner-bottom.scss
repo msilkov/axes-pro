@@ -1,0 +1,102 @@
+.banner-bottom {
+	position: relative;
+	min-height: 523px;
+	margin: 0 auto;
+	background-image: url(../images/banner-bottom.png);
+	background-position: 0 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	@media screen and (max-width: $iphone) {
+		min-height: 282px;
+		background-position: -100px 0;
+	}
+}
+
+.banner-bottom__content-wrapper{
+	position: relative;
+	max-width: 1920px;
+	min-height: 523px;
+	margin: 0 auto;
+	@media screen and (max-width: $macbookpro) {
+		max-width: 1170px;
+	}
+	@media screen and (max-width: $iphone) {
+		min-height: 282px;
+	}
+}
+
+.banner-bottom__text-content {
+	position: absolute;
+	top: 156px;
+	left: 284px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	color: #fff;
+	z-index: 3;
+	@media screen and (max-width: $macbookpro) {
+		top: 25%;
+		left: 0;
+	}
+	@media screen and (max-width: $iphone) {
+		position: relative;
+		top: 0;
+		left: 0;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.banner-bottom__heading {
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 64px;
+	max-width: 535px;
+	margin-bottom: 40px;
+	@media screen and (max-width: $macbookpro) {
+		font-size: 50px;
+		margin-bottom: 25px;
+	}
+	@media screen and (max-width: $iphone) {
+		font-size: 24px;
+		line-height: 28px;
+		margin-top: 45px;
+		margin-bottom: 15px;
+	}
+}
+
+.banner-bottom__text {
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 42px;
+	max-width: 920px;
+	@media screen and (max-width: $macbookpro) {
+		font-size: 32px;
+		line-height: 42px;
+		max-width: 780px;
+		margin-right: 100px;
+	}
+	@media screen and (max-width: $iphone) {
+		font-size: 18px;
+		line-height: 24px;
+		text-align: center;
+		margin-bottom: 40px;
+		margin-right: 0;
+		max-width: 920px;
+	}
+}
+
+.banner-bottom__button {
+	position: absolute;
+	right: -132px;
+	bottom: 0;
+	transform: translateX(100%);
+	@media screen and (max-width: $macbookpro) {
+		right: 0;
+	}
+	@media screen and (max-width: $iphone) {
+		position: relative;
+		transform: translateX(0);
+	}
+}

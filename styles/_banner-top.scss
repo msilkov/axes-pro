@@ -1,0 +1,188 @@
+.banner-top {
+	position: relative;
+	min-height: 690px;
+	background-image: url(../images/page-recruitment/banner-top.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	@media screen and (max-width: $iphone) {
+		max-width: 375px;
+		min-height: 436px;
+		background-position: -45px 0;
+	}
+	&_place_career {
+		background-image: url(../images/page-career/banner-top.png);
+		@media screen and (max-width: $iphone) {
+			background-image: url(../images/page-career/banner-top-mob.png);
+			background-position: 0 0;
+		}
+	}
+	&_place_training {
+		background-image: url(../images/page-training/banner-top.png);
+		@media screen and (max-width: $iphone) {
+			background-image: url(../images/page-training/banner-top-mob.png);
+			background-position: 0 0;
+		}
+	}
+	&_place_performance {
+		background-image: url(../images/page-performance/banner-top.png);
+		@media screen and (max-width: $iphone) {
+			background-image: url(../images/page-performance/banner-top-mob.png);
+			background-position: 0 0;
+		}
+	}
+	&_place_hr {
+		background-image: url(../images/page-hr/banner-top.png);
+		@media screen and (max-width: $iphone) {
+			background-image: url(../images/page-hr/banner-top-mob.png);
+			background-position: 0 0;
+		}
+	}
+	&_place_compens {
+		background-image: url(../images/page-compencation/banner-top.png);
+		@media screen and (max-width: $iphone) {
+			background-image: url(../images/page-compencation/banner-top-mob.png);
+			background-position: 0 0;
+		}
+	}
+	&_place_content-mngt {
+		background-image: url(../images/page-content-mngt/banner-top.png);
+		@media screen and (max-width: $iphone) {
+			background-image: url(../images/page-content-mngt/banner-top-mob.png);
+			background-position: 0 0;
+		}
+	}
+}
+
+.banner-top__content-wrapper{
+	position: relative;
+	max-width: 1920px;
+	min-height: 690px;
+	margin: 0 auto;
+	@media screen and (max-width: $macbookpro) {
+		max-width: 1170px;
+	}
+	@media screen and (max-width: $iphone) {
+		min-height: 436px;
+	}
+}
+
+.banner-top__text-content {
+	position: absolute;
+	top: 156px;
+	left: 284px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	color: #fff;
+	z-index: 3;
+	padding: 0;
+	@media screen and (max-width: $macbookpro) {
+		top: 25%;
+		left: 0;
+	}
+	@media screen and (max-width: $iphone) {
+		position: relative;
+		top: 0;
+		left: 0;
+		justify-content: center;
+		align-items: center;
+		padding: 0 25px;
+	}
+}
+
+.banner-top__heading {
+	max-width: 820px;
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 64px;
+	margin-top: 0;
+	margin-bottom: 20px;
+	text-align: left;
+	@media screen and (max-width: $macbookpro) {
+		font-size: 50px;
+		margin-bottom: 25px;
+	}
+	@media screen and (max-width: $iphone) {
+		font-size: 25px;
+		line-height: 29px;
+		text-align: center;
+		margin-top: 70px;
+		margin-bottom: 40px;
+		max-width: 300px;
+	}
+	&_place_career {
+		max-width: 980px;
+		margin-bottom: 45px;
+	}
+	&_place_training {
+		max-width: 1015px;
+	}
+	&_place_hr {
+		margin-bottom: 30px;
+	}
+}
+
+.banner-top__text {
+	max-width: 487px;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 25px;
+	margin-bottom: 60px;
+	text-align: left;
+	&_note {
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 32px;
+		margin-bottom: 50px;
+		@media screen and (max-width: $iphone) {
+			font-size: 16px;
+		}
+	}
+	@media screen and (max-width: $iphone) {
+		font-size: 16px;
+		line-height: 18px;
+		text-align: center;
+		max-width: 300px;
+		margin-bottom: 40px;
+	}
+	&_place_career {
+		max-width: 660px;
+	}
+	&_place_training {
+		max-width: 720px;
+		margin-bottom: 90px;
+		@media screen and (max-width: $iphone) {
+			margin-bottom: 50px;
+		}
+	}
+	&_place_performance {
+		max-width: 660px;
+		margin-bottom: 80px;
+		@media screen and (max-width: $iphone) {
+			margin-bottom: 40px;
+		}
+	}
+	&_place_hr {
+		max-width: 580px;
+	}
+	&_place_content-mngt {
+		max-width: 625px;
+	}
+}
+
+.banner-top__image-wrapper {
+	position: absolute;
+	display: flex;
+	right: 202px;
+	bottom: 0;
+	z-index: 3;
+	@media screen and (max-width: $macbookpro) {
+		right: 0;
+
+	}
+	@media screen and (max-width: $iphone) {
+		display: none;
+	}
+}

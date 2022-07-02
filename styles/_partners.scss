@@ -1,0 +1,81 @@
+.partners {
+	@media screen and (max-width: $iphone) {
+		padding-bottom: 40px;
+	}
+}
+
+.partners-container {
+	max-width: 1620px;
+	margin: 0 auto;
+	@media screen and (max-width: $macbookpro) {
+		max-width: 1170px;
+	}
+	@media screen and (max-width: $iphone) {
+		max-width: 360px;
+	}
+}
+
+.section-heading_place_partners {
+	margin-bottom: 50px;
+	& span {
+		color: $orange;
+	}
+}
+
+.cornerstone__company__list {
+	margin-bottom: 150px;
+	@media screen and (max-width: $iphone) {
+		display: none;
+	}
+}
+
+.partners__slider-mobile {
+	display: none;
+	position: relative;
+	max-width: 230px;
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	@media screen and (max-width: $iphone) {
+		display: block;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+.partners__slider-mobile-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: transparent;
+	border: none;
+	z-index: 3;
+	margin: 0;
+	padding: 0;
+}
+
+.partners__slider-mobile-btnprev {
+	left: -30px;
+}
+
+.partners__slider-mobile-btnnext {
+	right: -30px;
+}
+.partners__item-wrapper {
+	margin: 5px;
+}
+
+.partners__item {
+	width: 220px;
+	height: 140px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 25px;
+	border: 1px solid #f0f0f0;
+	box-shadow: 1px 4px 8px rgba(85, 85, 85, 0.25);
+	border-radius: 15px;
+	overflow: hidden;
+}
+.partners__img {
+	object-fit: contain;
+}
